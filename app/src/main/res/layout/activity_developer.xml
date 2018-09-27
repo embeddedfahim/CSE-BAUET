@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/dev"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/textViewDev"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView4"
+            android:gravity="center"
+            android:text="@string/dev"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/fbbtn"
+        android:onClick="goToFb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/facebook"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="22dp" />
+
+    <ImageButton
+        android:id="@+id/twtrbtn"
+        android:onClick="goToTwtr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/twitter"
+        android:layout_above="@+id/gplsbtn"
+        android:layout_marginBottom="22dp" />
+
+    <ImageButton
+        android:id="@+id/gplsbtn"
+        android:onClick="goToGPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/gplus"
+        android:layout_alignBottom="@+id/imageView4" />
+</RelativeLayout>

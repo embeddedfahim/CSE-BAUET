@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="bd.ac.bauet.csebauet.SUZ">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/suz" />
+
+    <TextView
+        android:id="@+id/textView5"
+        fontPath="fonts/ESSB.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:text="Prof. Dr. Md. Shahid Uz Zaman"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textColor="@color/white" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView2" >
+
+        <TextView
+            android:id="@+id/textView8"
+            fontPath="fonts/ESR.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="20dp"
+            android:text="Qualifications:\nB.Sc in EEE, RUET, M.Sc in Computer Engineering, Shanghai University, China, Ph.D in Computer and Information Engineering, University of the Ryukyus, Japan\n\nExperience:\nFaculty Member, RUET\nFaculty Member, BAUET\nFaculty Member, University of Malaysia\n\nContact:\nszaman22@yahoo.com"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </ScrollView>
+
+</RelativeLayout>

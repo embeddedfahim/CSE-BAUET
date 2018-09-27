@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bd.ac.bauet.csebauet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo_small"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo_small"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FacultyMain"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Photos"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FullScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admission"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ApplyNow"
+            android:parentActivityName=".Admission" />
+        <activity
+            android:name=".Developer"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Updates"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Mirza"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".Asma"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".MOF"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".SUZ"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".Rupok"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".Tonu"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".Ananya"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".Sabbir"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".GSB"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".Anik"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".Sumon"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".Mithun"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".Rahat"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".Muktar"
+            android:parentActivityName=".FacultyMain" />
+        <activity
+            android:name=".Mamun"
+            android:parentActivityName=".FacultyMain" >
+        </activity>
+    </application>
+
+</manifest>

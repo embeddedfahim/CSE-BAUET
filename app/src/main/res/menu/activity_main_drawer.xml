@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_welcome"
+            android:icon="@drawable/welcome"
+            android:title="Welcome" />
+        <item
+            android:id="@+id/nav_overview"
+            android:icon="@drawable/overview"
+            android:title="Dept. Overview" />
+        <item
+            android:id="@+id/nav_faculty"
+            android:icon="@drawable/faculty"
+            android:title="Faculty Members" />
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@drawable/photos"
+            android:title="Photos" />
+        <item
+            android:id="@+id/nav_admission"
+            android:icon="@drawable/adinfo"
+            android:title="Admission" />
+
+    </group>
+
+    <item android:title="About this app">
+        <menu>
+            <item
+                android:id="@+id/nav_updates"
+                android:icon="@drawable/updates"
+                android:title="Release and Updates" />
+            <item
+                android:id="@+id/nav_dev"
+                android:icon="@drawable/devinfo"
+                android:title="Developer" />
+
+        </menu>
+    </item>
+
+</menu>
